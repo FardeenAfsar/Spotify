@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import * as Vibrant from 'node-vibrant'
+// import * as Vibrant from 'node-vibrant'
 
 import props from '@/utils/props.js'
 
@@ -292,7 +292,7 @@ export default {
       this.$emit('spotifyTrackUpdated', this.playerData)
 
       this.$nextTick(() => {
-        this.getAlbumColours()
+        // this.getAlbumColours()
       })
     }
   }
