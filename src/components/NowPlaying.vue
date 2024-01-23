@@ -127,25 +127,25 @@ export default {
     /**
      * Get the colour palette from the album cover.
      */
-    getAlbumColours() {
-      /**
-       * No image (rare).
-       */
-      if (!this.player.trackAlbum?.image) {
-        return
-      }
+    // getAlbumColours() {
+    //   /**
+    //    * No image (rare).
+    //    */
+    //   if (!this.player.trackAlbum?.image) {
+    //     return
+    //   }
 
-      /**
-       * Run node-vibrant to get colours.
-       */
-      Vibrant.from(this.player.trackAlbum.image)
-        .quality(1)
-        .clearFilters()
-        .getPalette()
-        .then(palette => {
-          this.handleAlbumPalette(palette)
-        })
-    },
+    //   /**
+    //    * Run node-vibrant to get colours.
+    //    */
+    //   Vibrant.from(this.player.trackAlbum.image)
+    //     .quality(1)
+    //     .clearFilters()
+    //     .getPalette()
+    //     .then(palette => {
+    //       this.handleAlbumPalette(palette)
+    //     })
+    // },
 
     /**
      * Return a formatted empty object for an idle player.
